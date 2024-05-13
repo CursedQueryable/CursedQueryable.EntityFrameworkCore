@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Title>CursedQueryable.EntityFrameworkCore</Title>
+    <Description>Cursor-based seek/keyset pagination for Entity Framework Core - in a singe line.</Description>
+    <AssemblyName>CursedQueryable.EntityFrameworkCore</AssemblyName>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>CursedQueryable.EntityFrameworkCore</PackageId>
+    <PackageTags>paginator pagination keyset seek cursor queryable iqueryable cursed efcore entityframeworkcore entity-framework-core entity framework core</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/CursedQueryable</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\CursedQueryable.snk</AssemblyOriginatorKeyFile>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <MinVerDefaultPreReleaseIdentifiers>preview.0</MinVerDefaultPreReleaseIdentifiers>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon.png" Pack="true" PackagePath="" Visible="False"/>
+    <None Include="..\..\LICENSE.md" Pack="true" PackagePath="" Visible="False"/>
+    <None Include="..\..\README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CursedQueryable" Version="1.0.0"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.*"/>
+    <PackageReference Include="MinVer" Version="4.3.0" PrivateAssets="All"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System"/>
+  </ItemGroup>
+
+</Project>

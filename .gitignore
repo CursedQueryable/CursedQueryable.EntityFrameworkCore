@@ -1,5 +1,4 @@
-scripts/
-coverage/
+artifacts/
 
 # Local development files
 *.swp

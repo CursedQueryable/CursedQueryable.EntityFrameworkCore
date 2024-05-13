@@ -1,0 +1,41 @@
+# For use with IntegrationTests
+name: cursed-queryable
+
+services:
+  mariadb:
+    image: mariadb:11
+    ports:
+      - 3307:3306
+    environment:
+      MARIADB_ROOT_PASSWORD: cqPassword!
+
+  mysql:
+    image: mysql:8
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: cqPassword!
+  
+  oracle:
+    image: container-registry.oracle.com/database/free:latest
+    ports:
+      - 1521:1521
+    volumes:
+      - /opt/oracle/oradata
+    environment:
+      ORACLE_PWD: cqPassword!
+
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: cqPassword!
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - 1433:1433
+    environment:
+      MSSQL_SA_PASSWORD: cqPassword!
+      ACCEPT_EULA: Y

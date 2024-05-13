@@ -1,0 +1,28 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursedQueryable.EntityFrameworkCore", "src\CursedQueryable.EntityFrameworkCore\CursedQueryable.EntityFrameworkCore.csproj", "{F4E006FA-636F-4C52-A6FB-B5F7282CAA2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursedQueryable.IntegrationTests", "src\IntegrationTests\CursedQueryable.EntityFrameworkCore.IntegrationTests.csproj", "{43B89D0A-0604-41CB-B846-0DE4A2A9498A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursedQueryable.UnitTests", "src\UnitTests\CursedQueryable.EntityFrameworkCore.UnitTests.csproj", "{CFD9A559-6773-47CD-B6CC-C33EC591BDCD}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4E006FA-636F-4C52-A6FB-B5F7282CAA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E006FA-636F-4C52-A6FB-B5F7282CAA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E006FA-636F-4C52-A6FB-B5F7282CAA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E006FA-636F-4C52-A6FB-B5F7282CAA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B89D0A-0604-41CB-B846-0DE4A2A9498A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B89D0A-0604-41CB-B846-0DE4A2A9498A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B89D0A-0604-41CB-B846-0DE4A2A9498A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B89D0A-0604-41CB-B846-0DE4A2A9498A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD9A559-6773-47CD-B6CC-C33EC591BDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD9A559-6773-47CD-B6CC-C33EC591BDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD9A559-6773-47CD-B6CC-C33EC591BDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD9A559-6773-47CD-B6CC-C33EC591BDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
