@@ -20,14 +20,14 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="FluentAssertions" Version="6.12.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.3"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.19"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.19"/>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0"/>
     <PackageReference Include="Polly" Version="8.3.1"/>
-    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.0" Aliases="MySql"/>
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2"/>
-    <PackageReference Include="Oracle.EntityFrameworkCore" Version="8.21.121"/>
-    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2"/>
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.16" Aliases="MySql"/>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.18"/>
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="7.21.13"/>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0"/>
     <PackageReference Include="xunit" Version="2.7.0"/>
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
       <PrivateAssets>all</PrivateAssets>

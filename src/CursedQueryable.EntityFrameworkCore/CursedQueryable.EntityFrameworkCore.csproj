@@ -4,7 +4,8 @@
     <Title>CursedQueryable.EntityFrameworkCore</Title>
     <Description>Cursor-based seek/keyset pagination for Entity Framework Core - in a singe line.</Description>
     <AssemblyName>CursedQueryable.EntityFrameworkCore</AssemblyName>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>12</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -35,7 +36,7 @@
 
   <ItemGroup>
     <PackageReference Include="CursedQueryable" Version="1.0.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.*"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.*"/>
     <PackageReference Include="MinVer" Version="4.3.0" PrivateAssets="All"/>
   </ItemGroup>
 
