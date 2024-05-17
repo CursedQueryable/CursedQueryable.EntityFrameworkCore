@@ -16,7 +16,7 @@ public sealed class EfCoreEntityDescriptorProvider : IEntityDescriptorProvider
     public bool TryGetEntityDescriptor(Expression expression,
         [MaybeNullWhen(false)] out IEntityDescriptor entityDescriptor)
     {
-        if (expression is EntityQueryRootExpression { QueryProvider: not null } root)
+        if (expression is QueryRootExpression { QueryProvider: not null } root)
         {
             entityDescriptor = new EfCoreEntityDescriptor(root);
             return true;

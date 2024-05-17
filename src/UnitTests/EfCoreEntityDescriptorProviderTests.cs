@@ -34,7 +34,7 @@ public class EfCoreEntityDescriptorProviderTests
             .Returns(new[] { mockKey.Object });
 
         var mockQueryProvider = new Mock<IAsyncQueryProvider>();
-        var rootExpression = new EntityQueryRootExpression(mockQueryProvider.Object, mockEntityType.Object);
+        var rootExpression = new QueryRootExpression(mockQueryProvider.Object, mockEntityType.Object);
 
         var success = _provider.TryGetEntityDescriptor(rootExpression, out var descriptor);
 
