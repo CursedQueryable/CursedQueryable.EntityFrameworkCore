@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using CursedQueryable.EntityDescriptors;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 
 namespace CursedQueryable.EntityFrameworkCore;
@@ -7,7 +8,7 @@ namespace CursedQueryable.EntityFrameworkCore;
 /// <summary>
 /// </summary>
 /// <param name="root">The root expression for any IQueryable originating from Entity Framework Core.</param>
-public sealed class EfCoreEntityDescriptor(EntityQueryRootExpression root) : IEntityDescriptor
+public sealed class EfCoreEntityDescriptor(QueryRootExpression root) : IEntityDescriptor
 {
     /// <summary>
     ///     The CLR type of the root entity.

@@ -8,7 +8,7 @@ public abstract class TestDbFixture : IDisposable
 {
     protected TestDbFixture(DbContextOptions<TestDbContext> options, Action<TestDbContext>? beforeEnsureCreated = null)
     {
-        DbContext = new TestDbContext(options);
+        DbContext = new TestDbContext(options, GetType());
         DbContext.Database.EnsureDeleted();
         beforeEnsureCreated?.Invoke(DbContext);
         DbContext.Database.EnsureCreated();

@@ -15,15 +15,19 @@ public class EfCoreEntityDescriptorProviderTests
     [Fact]
     public void Creates_descriptor_for_matching_queryable_root()
     {
+        var mockEntityType = new Mock<IEntityType>();
+
         var mockKey = new Mock<IKey>();
         mockKey
-            .Setup(m => m.IsPrimaryKey())
-            .Returns(true);
+            .Setup(m => m.DeclaringEntityType)
+            .Returns(mockEntityType.Object);
         mockKey
             .Setup(m => m.Properties)
             .Returns(new[] { new Mock<IProperty>().Object });
 
-        var mockEntityType = new Mock<IEntityType>();
+        mockEntityType
+            .Setup(m => m.FindPrimaryKey())
+            .Returns(mockKey.Object);
 
         mockEntityType
             .Setup(m => m.ClrType)
@@ -34,7 +38,7 @@ public class EfCoreEntityDescriptorProviderTests
             .Returns(new[] { mockKey.Object });
 
         var mockQueryProvider = new Mock<IAsyncQueryProvider>();
-        var rootExpression = new EntityQueryRootExpression(mockQueryProvider.Object, mockEntityType.Object);
+        var rootExpression = new QueryRootExpression(mockQueryProvider.Object, mockEntityType.Object);
 
         var success = _provider.TryGetEntityDescriptor(rootExpression, out var descriptor);
 

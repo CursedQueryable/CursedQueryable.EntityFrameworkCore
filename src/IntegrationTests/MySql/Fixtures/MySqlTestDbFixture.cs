@@ -16,6 +16,6 @@ public class MySqlTestDbFixture() : TestDbFixture(Options)
 
     private static DbContextOptions<TestDbContext> Options =>
         MySql::Microsoft.EntityFrameworkCore.MySQLDbContextOptionsExtensions.UseMySQL(
-                new DbContextOptionsBuilder<TestDbContext>(), ConnectionString, o => o.EnableRetryOnFailure())
+                new DbContextOptionsBuilder<TestDbContext>(), ConnectionString)
             .Options;
 }
